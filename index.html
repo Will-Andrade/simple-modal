@@ -8,6 +8,23 @@
     <title>Simple modal page</title>
 </head>
 <body>
+    <header class="header">
+        <h1 class="intro-title">This is the modal</h1>
+        <p class="intro-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, omnis.</p>
+        <button data-js="display-modal" class="display-modal">Show modal!</button>
+    </header>
+
+    <div data-js="modal-bg" class="modal-bg">
+        <form class="modal">
+            <h2>Subscribe to our plan!</h2>
+            <label for="name">Name:</label>
+            <input type="text" name="name" />
+            <label for="email">Email:</label>
+            <input type="email" name="email" />
+            <button data-js="hide-modal" type="submit" class="subscribe-btn">Subscribe</button>
+            <span data-js="modal-close" class="modal-close">X</span>
+        </form>
+    </div>
     <script src="js/app.js"></script>
 </body>
 </html>
